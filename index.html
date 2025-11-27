@@ -216,6 +216,25 @@
     </div>
   </section>
 
+  <!-- REVIEWS -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <header class="section-header">
+        <h2>Client Reviews</h2>
+        <p>See what recent clients have said about working with Loran.</p>
+      </header>
+  
+      <div id="reviews-container" class="reviews-grid">
+        <p class="loading">Loading reviews...</p>
+      </div>
+  
+      <div class="center" style="margin-top: 1.5rem;">
+        <a href="https://www.zillow.com/lender-profile/loran089/" target="_blank" class="btn btn-ghost">
+          View More on Zillow
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
@@ -310,6 +329,23 @@
     </div>
 
   </footer>
+  
+  <!-- AI Chat Widget -->
+  <div id="ai-chat-button">💬</div>
+  
+  <div id="ai-chat-widget">
+    <div class="chat-header">
+      <span>Ask Loran AI</span>
+      <button id="chat-close">×</button>
+    </div>
+    
+    <div class="chat-messages" id="chat-messages"></div>
+    
+    <div class="chat-input-box">
+      <input type="text" id="chat-input" placeholder="Ask me anything about mortgages..." />
+      <button id="chat-send">➤</button>
+    </div>
+  </div>
 
 </body>
 </html>
