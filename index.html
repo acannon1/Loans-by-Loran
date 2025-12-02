@@ -91,68 +91,50 @@
 
 </head>
 
-
 <body>
   <!-- ======================================================= -->
   <!-- HEADER -->
   <!-- ======================================================= -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#hero" class="brand">
-        <div class="brand-mark">LG</div>
-        <div class="brand-text">
-          <span class="brand-primary">Loans by Loran</span>
-          <span class="brand-sub">Texas Mortgage Loan Advisor</span>
+      <a href="#home" class="logo">
+        <span class="logo-mark">LG</span>
+        <div class="logo-text">
+          <span class="logo-primary">Loans by Loran</span>
+          <span class="logo-sub">Mortgage Loan Specialist</span>
         </div>
       </a>
 
-      <!-- <div class="header-partner">
-        <img src="public/images/legacy-team-logo.png" alt="Legacy Team Mortgage Logo" class="legacy-logo" />
-      </div> -->
+      <div class="header-partner">
+        <img src="public/images/gadson-team-logo.png" alt="The Gadson Team" class="gadson-header-logo">
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
 
       <nav class="main-nav">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#meet-loran">Meet Loran</a></li>
-          <li><a href="#services">Loan Programs</a></li>
-          <li><a href="#process">Mortgage Process</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-
-      <button class="hamburger"><span></span><span></span><span></span></button>
-
     </div>
   </header>
-
 
   <!-- ======================================================= -->
   <!-- HERO SECTION (SEO Keywords added) -->
   <!-- ======================================================= -->
-  <!-- <section id="hero" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <p class="eyebrow">Texas Mortgage Loan Advisor</p>
-
-        <h1>Home Loans, Refinancing, and Investment Property Financing</h1>
-
-        <p class="hero-subtitle">
-          Expert mortgage solutions trusted by homebuyers and real estate investors across Texas.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Apply Now</a>
-          <a href="#meet-loran" class="btn btn-outline">Meet Loran</a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <section id="hero" class="hero">
-    <div class="container hero-grid">
+  <section id="home" class="hero hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
   
       <!-- HERO TEXT LEFT -->
-      <div class="hero-content">
+      <!-- <div class="hero-content"> -->
         <p class="eyebrow">Texas Mortgage Loan Advisor</p>
   
         <h1>Your Trusted Partner in Home Financing</h1>
@@ -161,24 +143,28 @@
           Personalized mortgage solutions for homebuyers and real estate investors across Texas.
         </p>
   
-        <div class="hero-actions">
+        <div class="hero-cta">
           <a href="https://thegadsonteam.floify.com/apply" class="btn btn-primary">Apply Now</a>
-          <a href="#contact" class="btn btn-outline">Contact Us</a>
+          <a href="#contact" class="btn btn-primary">Contact Us</a>
         </div>
-      </div>
-  
-      <!-- LEGACY LOGO RIGHT -->
-      <div class="hero-logo-wrapper">
-        <img
-          src="public/images/legacy-team-logo.png"
-          alt="Legacy Mutual Mortgage"
-          class="hero-legacy-logo"
-        />
-      </div>
-  
+      </div>  
     </div>
   </section>
 
+  <!-- ======================================================= -->
+  <!-- ABOUT -->
+  <!-- ======================================================= -->
+  <section id="about" class="section about">
+    <div class="container narrow">
+      <h2>About Loans by Loran</h2>
+      <p>
+        I help Texas homebuyers and investors navigate the mortgage process with clarity, communication, and personalized guidance.
+      </p>
+      <p>
+        Backed by Legacy Mutual Mortgage, I offer competitive lending programs, fast pre-approvals, and support from application to closing day.
+      </p>
+    </div>
+  </section>
 
   <!-- ======================================================= -->
   <!-- MEET LORAN (SEO refined) -->
@@ -210,33 +196,16 @@
         <!-- Social Icons -->
         <div class="meet-social-icons">
           <a href="https://www.instagram.com/lorangadson/" target="_blank" aria-label="Instagram">
-            <!-- IG Icon -->
+            <img class="social-icon" src="public/images/instagram.png" alt="Instagram">
           </a>
           <a href="https://www.facebook.com/people/Loran-Gadson-Loan-Officer/61558100608173/" target="_blank" aria-label="Facebook">
-            <!-- FB Icon -->
+            <img class="social-icon" src="public/images/facebook.png" alt="Facebook">
           </a>
         </div>
 
       </div>
     </div>
   </section>
-
-
-  <!-- ======================================================= -->
-  <!-- ABOUT -->
-  <!-- ======================================================= -->
-  <section class="section about">
-    <div class="container narrow">
-      <h2>About Loans by Loran</h2>
-      <p>
-        I help Texas homebuyers and investors navigate the mortgage process with clarity, communication, and personalized guidance.
-      </p>
-      <p>
-        Backed by Legacy Mutual Mortgage, I offer competitive lending programs, fast pre-approvals, and support from application to closing day.
-      </p>
-    </div>
-  </section>
-
 
   <!-- ======================================================= -->
   <!-- SERVICES (Renamed for SEO intent) -->
@@ -284,7 +253,6 @@
     </div>
   </section>
 
-
   <!-- ======================================================= -->
   <!-- VALUE / DIFFERENTIATORS -->
   <!-- ======================================================= -->
@@ -319,7 +287,6 @@
     </div>
   </section>
 
-
   <!-- ======================================================= -->
   <!-- PROCESS -->
   <!-- ======================================================= -->
@@ -342,7 +309,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- ======================================================= -->
   <!-- REVIEWS -->
@@ -414,9 +380,22 @@
       </div>
 
     </div>
+  </section>  
+
+  <section class="legal-disclaimer">
+    <div class="container">
+      <p>
+        <strong>Disclaimer:</strong>
+        By clicking Send, I am submitting my express written consent Legacy Mutual Mortgage and 
+        its employees to send marketing or promotional messages, including texts and calls made 
+        with an automatic telephone dialing system or recorded or ratification voice message, 
+        even if the phone number I submit is on a Do Not Call list, related to the home purchase 
+        loans, investment loans, or refinancing options I am inquiring about. Message and data 
+        rates may apply. I am not required to submit this consent to obtain any mortgage services. 
+        Test STOP to stop. Text HELP for help.
+      </p>
+    </div>
   </section>
-
-
 
   <!-- ======================================================= -->
   <!-- FAQ SECTION (MAJOR SEO BOOST) -->
@@ -447,25 +426,20 @@
     </div>
   </section>
 
-
-
   <!-- ======================================================= -->
-  <!-- LEGAL & FOOTER (unchanged except for SEO) -->
+  <!-- LEGAL (unchanged except for SEO) -->
   <!-- ======================================================= -->
-
-  <section class="legal-disclaimer">
-    <div class="container">
-      <p>
-        <strong>Disclaimer:</strong> By clicking Send, I am submitting my express written consent to Legacy Mutual Mortgage 
-        and its employees to send marketing or promotional messages…
-      </p>
-    </div>
-  </section>
 
   <section class="general-disclaimer">
     <div class="container">
       <p>
-        Gardner Financial Services, LTD., dba Legacy Mutual Mortgage, NMLS #278675…
+        <strong>Disclaimer:</strong>
+        Gardner Financial Services, LTD., dba Legacy Mutual Mortgage, NMLS #278675, an Equal Housing Lender. 
+        This material is for informational purposes only and should not be construed as investment and/or mortgage 
+        advice or a commitment to lend. Programs and rates are valid as of the date of this advertisement but 
+        subject to change without notice. All loans are subject to credit and property approval. Not all buyers 
+        will qualify. Although the material is deemed to be accurate and reliable, there is no guarantee of its accuracy. 
+        Copyright © Legacy Mutual Mortgage.
       </p>
 
       <div class="disclaimer-links">
@@ -477,6 +451,9 @@
     </div>
   </section>
 
+  <!-- ======================================================= -->
+  <!-- FOOTER (unchanged except for SEO) -->
+  <!-- ======================================================= -->
   <footer class="site-footer">
     <div class="container footer-top">
 
@@ -486,68 +463,44 @@
           <span class="brand-primary">Loans by Loran</span>
           <span class="brand-sub">Texas Mortgage Loan Advisor</span>
         </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> Loans by Loran. All rights reserved.</p>
+          <p class="small-text">
+            Legacy Mutual Mortgage, NMLS #278675 • Loran Gadson NMLS #2543718
+          </p>
+          <p class="small-text">
+            <a href="https://www.nmlsconsumeraccess.org" target="_blank">nmlsconsumeraccess.org</a>
+          </p>
+        </div>
       </div>
 
       <div class="footer-compliance">
         <div class="footer-logos">
           <img src="public/images/equal-housing-opportunity.png" alt="Equal Housing Opportunity" class="eho-logo" />
         </div>
-
-        <p class="small-text">
-          Legacy Mutual Mortgage, NMLS #278675 • Loran Gadson NMLS #2543718
-        </p>
       </div>
 
     </div>
 
-    <div class="container footer-bottom">
-      <p>© <span id="year"></span> Loans by Loran. All rights reserved.</p>
-      <p class="small-text">
-        Gardner Financial Services, LTD., dba Legacy Mutual Mortgage, NMLS #278675.
-      </p>
-      <p class="small-text">
-        <a href="https://www.nmlsconsumeraccess.org" target="_blank">nmlsconsumeraccess.org</a>
-      </p>
-    </div>
   </footer>
-
-  <!-- CHAT WIDGET -->
-  <div id="chat-widget">
-    <div id="chat-button">
-      💬
+  
+  <!-- AI Chat Widget -->
+  <div id="ai-chat-button">💬</div>
+  
+  <div id="ai-chat-widget">
+    <div class="chat-header">
+      <span>Ask Loran AI</span>
+      <button id="chat-close">×</button>
     </div>
-  
-    <div id="chat-window">
-      <div class="chat-header">
-        <span>Legacy Mortgage Chat</span>
-        <button id="chat-close">&times;</button>
-      </div>
-
-      <div class="chat-body" id="chat-body">
-        <p>Hi! How can I help with your mortgage questions today?</p>
-      </div>
-  
-      <div class="chat-input">
-        <input type="text" id="chat-message" placeholder="Type your message..." />
-        <button id="chat-send">Send</button>
-      </div>
+    
+    <div class="chat-messages" id="chat-messages"></div>
+    
+    <div class="chat-input-box">
+      <input type="text" id="chat-input" placeholder="Ask me anything about mortgages..." />
+      <button id="chat-send">➤</button>
     </div>
   </div>
-
-
-  <script>
-    const chatButton = document.getElementById("chat-button");
-    const chatWindow = document.getElementById("chat-window");
-    const chatClose = document.getElementById("chat-close");
-  
-    chatButton.addEventListener("click", () => {
-      chatWindow.style.display = "flex";
-    });
-  
-    chatClose.addEventListener("click", () => {
-      chatWindow.style.display = "none";
-    });
-  </script>
 
 </body>
 </html>
