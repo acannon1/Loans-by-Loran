@@ -462,7 +462,6 @@
     </div>
   </section>
 
-
   <section class="general-disclaimer">
     <div class="container">
       <p>
@@ -470,15 +469,13 @@
       </p>
 
       <div class="disclaimer-links">
-        <a href="#" target="_blank">Legacy Mutual</a>
-        <a href="#" target="_blank">Terms & Conditions</a>
-        <a href="#" target="_blank">Privacy Policy</a>
+        <a href="https://legacymutual.com/" target="_blank">Legacy Mutual</a>
+        <a href="https://legacymutual.com/terms-conditions/" target="_blank">Terms & Conditions</a>
+        <a href="https://legacymutual.com/privacy-policy/" target="_blank">Privacy Policy</a>
         <a href="https://www.nmlsconsumeraccess.org" target="_blank">nmlsconsumeraccess.org</a>
       </div>
     </div>
   </section>
-
-
 
   <footer class="site-footer">
     <div class="container footer-top">
@@ -514,10 +511,43 @@
     </div>
   </footer>
 
+  <!-- CHAT WIDGET -->
+  <div id="chat-widget">
+    <div id="chat-button">
+      💬
+    </div>
+  
+    <div id="chat-window">
+      <div class="chat-header">
+        <span>Legacy Mortgage Chat</span>
+        <button id="chat-close">&times;</button>
+      </div>
+
+      <div class="chat-body" id="chat-body">
+        <p>Hi! How can I help with your mortgage questions today?</p>
+      </div>
+  
+      <div class="chat-input">
+        <input type="text" id="chat-message" placeholder="Type your message..." />
+        <button id="chat-send">Send</button>
+      </div>
+    </div>
+  </div>
 
 
-  <!-- AI CHAT WIDGET: unchanged -->
-  <!-- (Your AI widget code remains here as-is) -->
+  <script>
+    const chatButton = document.getElementById("chat-button");
+    const chatWindow = document.getElementById("chat-window");
+    const chatClose = document.getElementById("chat-close");
+  
+    chatButton.addEventListener("click", () => {
+      chatWindow.style.display = "flex";
+    });
+  
+    chatClose.addEventListener("click", () => {
+      chatWindow.style.display = "none";
+    });
+  </script>
 
 </body>
 </html>
