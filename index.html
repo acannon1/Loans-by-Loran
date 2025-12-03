@@ -38,12 +38,12 @@
   <script defer src="/src/js/main.js"></script>
 
   <!-- ======================= GOOGLE ANALYTICS ======================= -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PTWVLLSM1W"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JX01968Q21"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-PTWVLLSM1W');
+    gtag('config', 'G-JX01968Q21');
   </script>
 
   <!-- ======================= SCHEMA.ORG STRUCTURED DATA ======================= -->
@@ -69,22 +69,97 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "MortgageLender"],
     "name": "Loans by Loran",
+    "url": "https://loansbyloran.com",
+    "description": "Texas mortgage loan advisor offering home loans, refinancing, and investment property financing.",
     "image": "https://loansbyloran.com/public/images/loran-headshot.jpg",
+    "telephone": "832-403-3170",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "575 N. Dairy Ashford, Suite 750",
       "addressLocality": "Houston",
       "addressRegion": "TX",
-      "postalCode": "77079"
+      "postalCode": "77079",
+      "addressCountry": "US"
     },
-    "telephone": "832-403-3170",
-    "url": "https://loansbyloran.com",
+    "areaServed": {
+      "@type": "State",
+      "name": "Texas"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Legacy Mutual Mortgage",
+      "url": "https://legacymutual.com"
+    },
     "sameAs": [
       "https://www.instagram.com/lorangadson/",
       "https://www.facebook.com/people/Loran-Gadson-Loan-Officer/61558100608173/",
       "https://www.zillow.com/lender-profile/loran089/"
+    ]
+  }
+  </script>
+
+  <!-- PERSON SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Loran Gadson",
+    "jobTitle": "Mortgage Loan Advisor",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Legacy Mutual Mortgage"
+    },
+    "url": "https://loansbyloran.com",
+    "image": "https://loansbyloran.com/public/images/loran-headshot.jpg",
+    "telephone": "832-403-3170",
+    "sameAs": [
+      "https://www.instagram.com/lorangadson/",
+      "https://www.facebook.com/people/Loran-Gadson-Loan-Officer/61558100608173/",
+      "https://www.zillow.com/lender-profile/loran089/"
+    ]
+  }
+  </script>
+
+  <!-- FAQ SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I get pre-approved for a home loan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I offer a fast pre-approval process that gives you a clear budget and strengthens your offer when shopping for a home."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What loan programs do you offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Conventional, FHA, VA, jumbo loans, refinancing, and investment property financing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with first-time homebuyers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. I guide first-time buyers through each step to make the process simple and stress-free."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I serve homebuyers and real estate investors across the entire state of Texas."
+        }
+      }
     ]
   }
   </script>
@@ -102,7 +177,7 @@
         <span class="logo-mark">LG</span>
         <div class="logo-text">
           <span class="logo-primary">Loans by Loran</span>
-          <span class="logo-sub">Mortgage Loan Specialist</span>
+          <span class="logo-sub">Mortgage Loan Advisor</span>
         </div>
       </a>
 
