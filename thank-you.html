@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Thank You | Loans by Loran</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="src/css/style.css" />
+  <meta name="description" content="Thank you for contacting Loans by Loran. Your message has been received and we will follow up shortly.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://loansbyloran.com/thank-you.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thank You | Loans by Loran">
+  <meta property="og:description" content="Your message has been successfully submitted. Expect a follow-up shortly.">
+  <meta property="og:image" content="https://loansbyloran.com/public/images/loran-headshot.jpg">
+  <meta property="og:url" content="https://loansbyloran.com/thank-you.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thank You | Loans by Loran">
+  <meta name="twitter:description" content="Your message has been successfully submitted.">
+  <meta name="twitter:image" content="https://loansbyloran.com/public/images/loran-headshot.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles & JS -->
+  <link rel="stylesheet" href="/src/css/thank-you.css">
+  <script defer src="/src/js/thank-you.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JX01968Q21"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JX01968Q21');
+  </script>
 </head>
+
 <body>
 
-  <section class="section">
-    <div class="container center">
-      <h1 style="font-family: Playfair Display; font-size: 2.5rem; margin-bottom: 1rem;">Thank You</h1>
-      <p style="max-width: 520px; margin: 0 auto 1.4rem auto;">
-        Your message has been sent successfully. Loran will contact you shortly.
-      </p>
-      <a href="index.html" class="btn">Return Home</a>
+  <div class="container">
+
+    <!-- Checkmark Animation -->
+    <div class="checkmark"></div>
+
+    <!-- Logo -->
+    <div class="logo-mark">LG</div>
+
+    <h1>Thank You!</h1>
+
+    <p>
+      Your message has been successfully submitted.  
+      I’ll review your request and follow up with you shortly.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="btn-group">
+      <a href="/" class="btn btn-outline">Return Home</a>
+      <a href="https://thegadsonteam.floify.com/apply" class="btn btn-primary">Start My Loan</a>
     </div>
-  </section>
+
+  </div>
+
+  <div class="footer">
+    © <span id="year"></span> Loans by Loran • NMLS #2543718
+  </div>
 
 </body>
 </html>

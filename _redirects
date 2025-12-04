@@ -1,0 +1,9 @@
+# Pretty Anchor Links Fix (Local + Production)
+# Not required but included for best practice
+
+# Force HTTPS
+http://loansbyloran.com/* https://loansbyloran.com/:splat 301!
+
+# Fix form submissions
+/contact  /#contact   200
+/  /thank-you.html  302
