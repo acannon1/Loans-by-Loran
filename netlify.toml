@@ -2,49 +2,46 @@
 #  Netlify Configuration - LoansByLoran
 # ===========================================
 
-#[build]
-#  publish = "."
-#  command = ""
-
 [build]
-  publish = "/"
+  publish = "."
   command = ""
 
-# -------------------------------------------
-#  NETLIFY FORMS
-# -------------------------------------------
-[[plugins]]
-  package = "@netlify/plugin-form-handling"
+# ------------------------------------------------
+# REDIRECTS
+# ------------------------------------------------
 
-# -------------------------------------------
-#  REDIRECTS
-# -------------------------------------------
+# Force HTTPS (no-www → www)
+[[redirects]]
+  from = "http://loansbyloran.com/*"
+  to = "https://www.loansbyloran.com/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
-  from = "/contact"
-  to = "/index.html#contact-form"
-  status = 200
+  from = "https://loansbyloran.com/*"
+  to = "https://www.loansbyloran.com/:splat"
+  status = 301
+  force = true
 
-# Redirect form submissions to the thank-you page
+# Thank-you page
 [[redirects]]
   from = "/thank-you"
   to = "/thank-you.html"
   status = 200
 
-# No extra page redirects required since you're not using
-# services.html, process.html, or contact.html anymore.
-
-# If you want clean URLs for anchors (optional):
+# OPTIONAL: scroll-to-contact shortcut
+# Only enable if you truly want /contact as a friendly URL
 # [[redirects]]
-#   from = "/apply"
-#   to = "/index.html#apply"
+#   from = "/contact"
+#   to = "/index.html#contact-form"
 #   status = 200
 
-# -------------------------------------------
-#  SECURITY HEADERS
-# -------------------------------------------
+
+# ------------------------------------------------
+# SECURITY HEADERS
+# ------------------------------------------------
 [[headers]]
-  for = "/*"
+  for = "/*.html"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
@@ -52,11 +49,18 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Cache-Control = "no-store"
 
-# -------------------------------------------
-#  CACHING
-# -------------------------------------------
+# ------------------------------------------------
+# ASSET CACHING
+# ------------------------------------------------
 [[headers]]
   for = "/public/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Icons and favicon caching
+[[headers]]
+  for = "/favicon*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
