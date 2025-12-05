@@ -1,8 +1,62 @@
+# ===========================================
+#  Netlify Configuration - LoansByLoran
+# ===========================================
+
+#[build]
+#  publish = "."
+#  command = ""
+
 [build]
-  publish = "."
+  publish = "/"
   command = ""
+
+# -------------------------------------------
+#  NETLIFY FORMS
+# -------------------------------------------
+[[plugins]]
+  package = "@netlify/plugin-form-handling"
+
+# -------------------------------------------
+#  REDIRECTS
+# -------------------------------------------
 
 [[redirects]]
   from = "/contact"
   to = "/index.html#contact-form"
   status = 200
+
+# Redirect form submissions to the thank-you page
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+
+# No extra page redirects required since you're not using
+# services.html, process.html, or contact.html anymore.
+
+# If you want clean URLs for anchors (optional):
+# [[redirects]]
+#   from = "/apply"
+#   to = "/index.html#apply"
+#   status = 200
+
+# -------------------------------------------
+#  SECURITY HEADERS
+# -------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+# -------------------------------------------
+#  CACHING
+# -------------------------------------------
+[[headers]]
+  for = "/public/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
